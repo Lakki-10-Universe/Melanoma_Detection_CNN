@@ -44,7 +44,7 @@ Dense (128, ReLU) + Dropout (25%) → Further abstraction of features.
 Dense (64, ReLU) + Dropout (25%) → Enhances feature representation.
 Dense (Output Size, Softmax) → Final classification layer with softmax activation for multi-class prediction.
 
-Summary
+## Model Summary
 Model Performance and Observations :
 Initial Accuracy : The model started with a low training accuracy of 13.8% and validation accuracy of 12.8%, which indicates a challenging classification task.
 Steady Improvement : Accuracy improved consistently, reaching 88.6% (training) and 88.9% (validation) by Epoch 45.
