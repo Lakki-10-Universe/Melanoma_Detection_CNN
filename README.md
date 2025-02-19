@@ -46,32 +46,32 @@ Dense (Output Size, Softmax) → Final classification layer with softmax activat
 
 ## Model Summary
 Model Performance and Observations :
-Initial Accuracy : The model started with a low training accuracy of 13.8% and validation accuracy of 12.8%, which indicates a challenging classification task.
-Steady Improvement : Accuracy improved consistently, reaching 88.6% (training) and 88.9% (validation) by Epoch 45.
-Loss Reduction : Training loss reduced from 2.33 to 0.18, and validation loss reduced from 2.46 to 0.56.
-Validation Accuracy Peaks at 88.9% : Indicates strong generalization to unseen data.
-Best Epoch : Around Epoch 36-45, where accuracy stabilized above 92% (training) and 88% (validation).
-ReduceLROnPlateau Activation (Epoch 34) : Learning rate was reduced to 0.0002, helping fine-tune performance.
+- Initial Accuracy : The model started with a low training accuracy of 13.8% and validation accuracy of 12.8%, which indicates a challenging classification task.
+- Steady Improvement : Accuracy improved consistently, reaching 88.6% (training) and 88.9% (validation) by Epoch 45.
+- Loss Reduction : Training loss reduced from 2.33 to 0.18, and validation loss reduced from 2.46 to 0.56.
+- Validation Accuracy Peaks at 88.9% : Indicates strong generalization to unseen data.
+- Best Epoch : Around Epoch 36-45, where accuracy stabilized above 92% (training) and 88% (validation).
+- ReduceLROnPlateau Activation (Epoch 34) : Learning rate was reduced to 0.0002, helping fine-tune performance.
 
 Comparison with Previous Models :
-Significant Improvement : Previous models had much lower accuracy (likely around 70-75%). This model surpasses them with an over 10-15% boost.
-More Stable Learning Curve : No drastic drops or spikes, indicating better optimization.
-Better Handling of Overfitting : Training and validation curves are closely aligned, showing reduced overfitting.
+- Significant Improvement : Previous models had much lower accuracy (likely around 70-75%). This model surpasses them with an over 10-15% boost.
+- More Stable Learning Curve : No drastic drops or spikes, indicating better optimization.
+- Better Handling of Overfitting : Training and validation curves are closely aligned, showing reduced overfitting.
 
 Overfitting or Underfitting?
-Mild Overfitting (Epoch 40+) : Training accuracy is 92-93%, but validation stagnates around 88-89%. The small gap suggests minimal overfitting but not excessive.
-Balanced Model : The ReduceLROnPlateau helped curb overfitting, keeping validation accuracy high.
+- Mild Overfitting (Epoch 40+) : Training accuracy is 92-93%, but validation stagnates around 88-89%. The small gap suggests minimal overfitting but not excessive.
+- Balanced Model : The ReduceLROnPlateau helped curb overfitting, keeping validation accuracy high.
 
 Effect of Class Rebalancing :
-Boosted Early Training Stability : Class rebalance likely helped in overcoming class imbalance issues, preventing dominance by majority classes.
-Higher Generalization : The validation accuracy jumps suggest that the model learned well from rebalanced data.
+- Boosted Early Training Stability : Class rebalance likely helped in overcoming class imbalance issues, preventing dominance by majority classes.
+- Higher Generalization : The validation accuracy jumps suggest that the model learned well from rebalanced data.
 
 Conclusion :
-Highly improved model, achieving a substantial boost in accuracy.
-Minimal overfitting, controlled well with LR reduction.
-Class rebalancing contributed positively by improving early learning.
-One of the best versions of this model so far.
-The Final Model Validation also shows a 100% match between the Actual Class and the Predicted Class.
+1. Highly improved model, achieving a substantial boost in accuracy.
+2. Minimal overfitting, controlled well with LR reduction.
+3. Class rebalancing contributed positively by improving early learning.
+4. One of the best versions of this model so far.
+5. The Final Model Validation also shows a 100% match between the Actual Class and the Predicted Class.
 
 ## Technologies Used
 
